@@ -1,5 +1,9 @@
 #ifndef EMPCLASS_H
 #define EMPCLASS_H
+#include <iostream>
+#include <string>
+
+using namespace std;
 
 class Employee
 {
@@ -8,7 +12,7 @@ class Employee
         int employeeNumber;
         string hireDate;
         
-    publlic:
+    public:
         Employee()
         {
             employeeName = "";
@@ -35,10 +39,10 @@ class Employee
         string getName()
         {return employeeName;}
         
-        int getNumber()
+        int getNumber() const
         {return employeeNumber;}
         
-        string getDate()
+        string getDate() const
         {return hireDate;}
 };
 
